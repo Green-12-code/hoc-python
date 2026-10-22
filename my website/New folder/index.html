@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday!</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #d8e8ff);
+        }
+
+        .birthday-card {
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #ff4f81;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 20px;
+            background: #ff4f81;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #691e32;
+        }
+
+        #message {
+            display: none;
+            margin-top: 20px;
+            color: #ff4f81;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="birthday-card">
+
+        <h1>🎂🎉</h1>
+
+        <h2>Happy Birthday!</h2>
+
+        <p>
+            Happy Birthday, Bống ! ❤️
+        </p>
+
+        <p>
+            Hôm nay là sinh nhật của một công chúa!
+        </p>
+
+        <button onclick="showMessage()">
+            Nhấn vào me 🎁
+        </button>
+
+        <p id="message">
+            🎉 Surprise! Chúc em có một sinh nhật thật tuyệt vời! 🎉
+            Luôn Luôn chăm học để đậu NV1 năm nay nhé >😁😍
+
+        </p>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
